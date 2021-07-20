@@ -1,5 +1,5 @@
 <!--
-author:   Your Name
+author:   Hiwi
 
 email:    your@mail.org
 

@@ -23,6 +23,9 @@ translation: Français translations/French.md
 
 # Course Main Title
 
+
+![Hier sollte ein Dreieck erscheinen](Dreieck.svg)
+
 This is your **course** initialization stub.
 
 Please see the [Docs](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md)

@@ -26,6 +26,10 @@ translation: Français translations/French.md
 
 ![Hier sollte ein Dreieck erscheinen](Dreieck.svg)
 
+!?[Dreieckvideo](https://www.youtube.com/watch?v=C4m9MwZbZuM)
+
+??[P Orbital](https://sketchfab.com/3d-models/pxyz-orbital-b042633bf85a4e758fe39cbb45f51fa5)
+
 This is your **course** initialization stub.
 
 Please see the [Docs](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md)
@@ -34,6 +38,8 @@ to find out what is possible in [LiaScript](https://liascript.github.io).
 If you want to use instant help in your Atom IDE, please type **lia** to see all available shortcuts.
 
 ## Markdown
+
+??[Geogebra](https://www.geogebra.org/calculator)
 
 You can use common [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax to create your course, such as:
 

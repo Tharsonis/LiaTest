@@ -1,13 +1,13 @@
 <!--
 author:   Hiwi
 
-email:    your@mail.org
+email:    blablubb@gmail.com
 
 version:  0.0.1
 
-language: en
+language: de
 
-narrator: US English Female
+narrator: Deutsch Female
 
 comment:  Try to write a short comment about
           your course, multiline is also okay.
@@ -16,13 +16,20 @@ link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
 script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
-translation: Deutsch  translations/German.md
+import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
 
-translation: Français translations/French.md
+@hallowelt: **hallo  @0**
+
+
 -->
 
 # Course Main Title
 
+## hallowelt
+
+@hallowelt(fabian)
+
+@hallowelt(@author)
 
 ![Hier sollte ein Dreieck erscheinen](Dreieck.svg)
 
@@ -123,11 +130,27 @@ What did the **fish** say when he hit a **concrete wall**?
 
 ### Multiple Choice
 
-Just add as many points as you wish:
+Just add as ***many*** points as __you__ wish:
 
     [[X]] Only the **X** marks the correct point.
     [[ ]] Empty ones are wrong.
     [[X]] ...
+    [[?]] Tipp1
+    [[?]] Tipp2
+    [[?]] ![Hier sollte ein Dreieck erscheinen](Dreieck.svg)
+    ***
+    Auflösung 123
+
+    und das
+    Schritt 3
+    und schon
+
+    ![Hier sollte ein Dreieck erscheinen](Dreieck.svg)
+
+    ***************************
+
+
+
 
 ### Single Choice
 
@@ -192,3 +215,55 @@ else {
 Find out what you can even do more with quizzes:
 
 https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md
+
+
+## weitere Tests
+
+#### Innenwinkelsumme
+
+In der euklidschen (ebenen) Geometrie beträgt die Innenwinkelsumme 180°
+
+### Kongruenzsätze
+
+# Dreiecksprisma
+
+<div id="example">
+<wokwi-led color="red"   pin="13" label="13"></wokwi-led>
+<wokwi-led color="green" pin="12" label="12"></wokwi-led>
+<wokwi-led color="blue"  pin="11" label="11"></wokwi-led>
+<wokwi-led color="blue"  pin="10" label="10"></wokwi-led>
+<span id="simulation-time"></span>
+</div>
+
+``` cpp
+byte leds[] = {13, 12, 11, 10};
+void setup() {
+  Serial.begin(115200);
+  for (byte i = 0; i < sizeof(leds); i++) {
+    pinMode(leds[i], OUTPUT);
+  }
+}
+
+int i = 0;
+void loop() {
+  Serial.print("LED: ");
+  Serial.println(i);
+  digitalWrite(leds[i], HIGH);
+  delay(250);
+  digitalWrite(leds[i], LOW);
+  i = (i + 1) % sizeof(leds);
+}
+```
+@AVR8js.sketch(example)
+
+
+# Formeln
+
+$$
+   \sum_{i=1}^\infty\frac{1}{n^2}
+        =\frac{\pi^2}{6}
+$$
+
+https://katex.org/
+
+https://github.com/LiaTemplates
